@@ -1,18 +1,6 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Car Loan Arbitrage Calculator
+This app is designed for those who are hesitant on whether to buy a new car in cash or take out a loan.
+Instead of paying full price for the vehicle you can take out a loan and invest the rest of the money. 
+This app tells you how much money you would make or loose if ypu decide to take out a loan instead of buying cash.
+Latest version utilizes dynamic calculation, taking into account monthly widthrawals from investment account to cover the loan payments.
+This program does not provide financial advice.
