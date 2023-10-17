@@ -16,18 +16,19 @@ public class App {
         int loanTerm = scaner.nextInt();
 
         //calculations
-        double realAPY = (AVGSPYRET - IntRate);
-        double availableFunds = vehPrice*(1-downPayment);
-        double monthlyPayment = (availableFunds*(1+IntRate))/loanTerm/12;
-        double monthIR = realAPY/12;
-        double tp = availableFunds;
+        //double realAPY = (AVGSPYRET - IntRate);
+        double principal = vehPrice*(1-downPayment);
+        double monthlyPayment = (principal*(1+IntRate))/loanTerm/12;
+        double monthIR = AVGSPYRET/12;
+        //double tp = principal;
         double profit = 0;
         for(int i=0; i<loanTerm*12;i++){
-            availableFunds  = availableFunds - monthlyPayment;
-            double earned = availableFunds*monthIR;
+            principal  = principal - monthlyPayment;
+            double earned = principal*monthIR;
             profit = profit + earned;
-            availableFunds = availableFunds + earned;
+            principal = principal + earned;
         }
+        profit = profit - principal*IntRate;
 
 
         if(profit >=0){
